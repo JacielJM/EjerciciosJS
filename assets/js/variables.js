@@ -97,3 +97,40 @@ var bikeTravel = 6000; //km
 var sleepHours = 6;
 var savings = 10000; //MXN
 var creditCardDebt = 3083.64; //MXN
+
+// Nueva forma de declarar variables
+
+var a1 = 1;
+let a2 = 1;
+const a3 = 1;
+
+a3++; // devuelve error
+
+// arrays
+const carros = ['Honda', 'Ford', 'Tesla', 'Koegnisegg'];
+
+const carritoCompras = [
+	'Leche',
+	'Tortillas',
+	'Mango',
+	'Maruchan',
+	'Aguacate',
+	'Sandia',
+	'Queso',
+	'Sabritas',
+	'Oreo',
+	'Piña',
+	'Chachitos',
+	'Pollo',
+	'Jamon',
+	'Harina',
+	'Mantequilla',
+	'Chocolate',
+	'Wafflera Plaza Sesamo',
+	'Nutella',
+	'Fresas',
+	'Servilletas',
+	'Xbox Series X',
+];
+
+const mix = [1, 'Jaciel', null, true, carros];
