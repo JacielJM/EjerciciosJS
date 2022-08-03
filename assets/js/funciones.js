@@ -74,3 +74,4 @@ let tri = areaTriangulo(4, 4);
 console.log(resu);
 console.log(again);
 console.log(tri);
+

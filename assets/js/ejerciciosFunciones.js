@@ -32,3 +32,32 @@ const Conejo = {
 	color: 'gris',
 	peso: 500,
 };
+
+// factorial con arrow fn, error personalizad, operador ternario y recursión, esbellísmo.jpg
+const factorialOfNumber = (number) =>
+	number < 0 //primera condicion
+		? (() => {
+				throw new TypeError('No negative numbers please'); //si se cumple arroja este error
+		  })()
+		: number <= 1 //1er else evalua una segunda condicion para caso de corte
+		? 1 //caso de corte para detener recursion, retorna 1
+		: number * factorialOfNumber(number - 1); //2do else, llama a recursion
+//
+//
+//
+//
+//
+//clean code
+
+const factorial = (n) =>
+	n < 0
+		? (() => {
+				throw new TypeError('No negative numbers please');
+		  })()
+		: n <= 1
+		? 1
+		: n * factorial(n - 1);
+
+// EXAMPLES
+console.log(factorial(4));
+factorial(8);
