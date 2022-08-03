@@ -27,8 +27,7 @@ console.log(`\n`);
 
 //ejercicio 2
 function esMayorDeEdad(birthYear) {
-	let today = new Date();
-	let edad = today.getFullYear() - birthYear;
+	let edad = new Date().getFullYear() - birthYear;
 	if (birthYear && edad != 0) {
 		if (edad >= 18) {
 			return 'Es mayor de edad';

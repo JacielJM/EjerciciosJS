@@ -64,3 +64,9 @@ if (hora > 0 && hora <= 24) {
 } else {
 	alert('Su hora no es válida');
 }
+
+// Switch
+
+// Obtener la fecha actual
+
+var fecha = new Date();
