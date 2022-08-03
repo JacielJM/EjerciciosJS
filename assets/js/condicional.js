@@ -48,3 +48,19 @@ if (edad >= 18) {
 } else {
 	alert('bai bai');
 }
+
+var hora = 12;
+
+// Verificar  24 >= hora > 0
+
+if (hora > 0 && hora <= 24) {
+	// Codigo
+
+	if (hora < 7) {
+		alert('Buenas madrugadas');
+	} else {
+		alert('Que tenga un buen dia');
+	}
+} else {
+	alert('Su hora no es válida');
+}

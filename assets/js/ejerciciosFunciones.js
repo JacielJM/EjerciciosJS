@@ -60,4 +60,5 @@ const factorial = (n) =>
 
 // EXAMPLES
 console.log(factorial(4));
-factorial(8);
+let n = 8;
+console.log(`El factorial de ${n} es ${factorial(n)}`);
