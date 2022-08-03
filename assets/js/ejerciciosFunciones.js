@@ -11,7 +11,7 @@ function idCard() {
 console.log(idCard());
 
 // Ejercicio 2
-function calcDogAge(dogName = 'tu perro', humanYears = null) {
+function calcDogAge(dogName = 'tu perro', humanYears = NaN) {
 	let dogEq = 7;
 	let dogYears = humanYears * dogEq;
 	return `La edad de ${dogName} es ${dogYears} años perrunos`;
@@ -24,3 +24,11 @@ console.log(calcDogAge());
 const dogAge = (dogName, humanYears) =>
 	`${dogName} tiene ${humanYears * 7} años perrunos`;
 console.log(dogAge('Wisin', 5));
+
+// OBJETOS
+const Conejo = {
+	nombre: 'Griselo',
+	edad: 27,
+	color: 'gris',
+	peso: 500,
+};
