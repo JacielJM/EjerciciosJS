@@ -125,4 +125,132 @@ Podemos dividir estos metodos en 3:
     - Metodos accesores
     - Metodos repetitivos (spoiler)
 
+    //Metodos transformadores
+    
+    //push(): Agrega un elemento al final del arreglo
+    arrayDeEjemplo.push("Pitaya");
+    console.log("Agregamos la Pitaya a nuestro arreglo de ejemplo: ", arrayDeEjemplo);
+    
+    //pop(): Eliminar el ultimo elemento del arreglo
+    arrayDeEjemplo.pop(); //con pop no hace falta especificar el dato
+    console.log("Eliminamos el ultimo elemento del arreglo", arrayDeEjemplo);
 */
+console.log('\n');
+
+const frutas = ['Manzana', 'Pera', 'Guanábana', 'Coco'];
+console.log(frutas);
+
+frutas.push('Pitaya');
+
+console.log(frutas);
+
+frutas.pop();
+
+console.log(frutas);
+
+frutas.unshift('Piña', 'Mandarina', 'Uvas');
+
+console.log(frutas);
+
+frutas.sort();
+
+console.log(frutas);
+
+//sort(): Ordenar los elementos del arreglo y devuelve el arreglo ya ordenado de forma ascendente
+frutas.sort();
+console.log('Este es mi arreglo de ejemplo ordenado', frutas);
+
+//reverse(): Invierte el orden de los elementos del arreglo y devuelve el arreglo invertido
+frutas.reverse();
+console.log('Este es nuestro arreglo invertido', frutas);
+
+//slice(): Extraemos una seccion del arreglo o cadena, y devuelve una cadena nueva, copiando el arreglo (no se modifica nada, sino que creamos una copia)
+var saludo1 = 'Hola, estoy aprendiendo arreglos en Generation';
+var saludo2 = saludo1.slice(3, 4);
+console.log('Imprimimos la rebanada del arreglo original', saludo2);
+
+var saludo3 = saludo1.slice(9);
+console.log('Imprimimos la rebanada del arreglo original', saludo3);
+
+var saludo4 = saludo1.slice(-9, -5);
+console.log('Imprimimos la rebanada del arreglo original', saludo4);
+
+/*
+//splice(): Modificar el arreglo en 3 formas distintas
+
+- Eliminar elementos del arreglo
+- Agregar elementos nuevos al arreglo
+- Reemplazar elementos que ya existen en el arreglo
+
+
+Sintaxis basica
+
+splice(indice de inicio, cantidad de elementos a eliminar, nuevo elemento1, nuevoelemento2, etc.)
+
+    - Indice de inicio: la posicion desde donde comenzamos a eliminar elementos (primer numero dentro del parentesis)
+    - Cantidad de elementos a eliminar: numero de elementos a borrar (segundo numero del parentesis)
+    - elemento a agregar : los nuevos elementos que se agregan al arreglo(tercer elemento del parentesis)
+
+*/
+
+let mesesDelAnio = ['Enero', 'Febrero', 'Agosto', 'Septiembre'];
+console.log('Este es nuestro arrreglo de los meses del anio: ', mesesDelAnio);
+
+//Eliminar y agregar datos usando splice
+mesesDelAnio.splice(1, 2, 'Abril', 'Mayo');
+console.log('Este es el nuevo arreglo con los meses borrados: ', mesesDelAnio);
+
+//Agregar elemenos sin borrar nada arreglo
+let diasSemana = ['Lunes', 'Martes', 'Miercoles'];
+console.log('Los dias de la semana son: ', diasSemana);
+
+diasSemana.splice(5, 0, 'Jueves', 'Viernes', 'Sabado');
+
+console.log('Los nuevos dias de la semana son: ', diasSemana);
+
+/*
+Metodos Accesores
+*/
+
+var ensalada = ['jitomate', 'zanahoria', 'lechuga', 'chicharos', 'cebolla'];
+
+//length():Nos permite saber el numero de elementos o longitud del arreglo
+
+console.log('Tenemos estos elementos en el arreglo ensalada ', ensalada.length);
+
+//join(): Nos permite unir los elementos del arreglo con una cadena de texto
+console.log('Esta es una feliensalada: ', ensalada.join('-'));
+
+//concat(): Nos permite unir dos o mas arrays en uno solo. Devuelve un nuevo arreglo con los elementos de los otros arreglos.
+
+let dulces = [
+	'galletas',
+	'chetos',
+	'glorias',
+	'galletas',
+	'gansitos',
+	'picafresas',
+	'tamborines',
+	'galletas',
+];
+
+let mezcla = ensalada.concat(dulces);
+console.log('Esta es mi mezcla: ', mezcla);
+
+//indexOf: Nos permite saber la posicion de un elemento dentro del arreglo
+
+console.log(
+	'La posicion de los chetos de mi arreglo dulces: ',
+	dulces.indexOf('chetos')
+);
+
+//lastindexOf(): Nos permite saber la ultima posicion de un elemento determinado dentro del arreglo
+console.log(
+	'La ultima posicion de las galletas es: ',
+	dulces.lastIndexOf('galletas')
+);
+
+//toString
+//valueOf : valor de
+console.log(dulces.valueOf());
+//includes
