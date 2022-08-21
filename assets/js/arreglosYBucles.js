@@ -302,7 +302,7 @@ lista.forEach(function (n) {
 	}
 });
 
-console.log('Numeros restantes', lista);
+// console.log('Numeros restantes', lista);
 
 /**Bucles o loops o ciclos
  *
@@ -316,4 +316,45 @@ console.log('Numeros restantes', lista);
  * Variantes:
  * 	- for in
  * 	- for of
+ *
+ */
+
+let valorInicial = 0;
+while (valorInicial < 5) {
+	valorInicial++;
+	// console.log(valorInicial);
+}
+
+// ejercicio grupal
+
+let valorLimite = prompt('Ingrese un numero entero positivo');
+let nInicial = 1;
+
+while (nInicial <= valorLimite) {
+	console.log(nInicial);
+	nInicial += 2;
+}
+//
+// let numeroInicial = 1;
+
+// let valorLimit = prompt(
+// 	'Hola, por favor ingresa un numero entero positivo que sea el limite'
+// );
+
+// while (numeroInicial <= valorLimit) {
+// 	//MIENTRAS el numero inicial sea menor que el limite, ejecutamos lo de abajo
+// 	if (numeroInicial % 2 != 0) {
+// 		//si al dividir el numero inicial entre 2, el residuo es diferente de 0 (es impar)...
+// 		console.log(numeroInicial); //Imprimimos el valor de la variable
+// 	}
+// 	numeroInicial++; // Incrementamos de uno en uno nuestra variable inicial
+// }
+
+// do-while vs while, son la misma cosa
+
+/**
+ * FOR
+ * Sirve para iterar sobre una seccion de una variable.
+ *
+ * valor inicial, contador, condiciones
  */
